@@ -76,8 +76,9 @@ img {
 }
 input[type='date']{
     width: 250px;
-    height: auto;
+    height: 30px;
     border: black solid 0.5px;
+    border-radius: 5px;
     outline: none;
 }
 /*Choose Slot */

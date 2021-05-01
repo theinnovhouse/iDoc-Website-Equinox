@@ -1,0 +1,17 @@
+.form{
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+}
+input{
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 1%;
+}
+input[type=password]{
+    margin-left: 20px;
+}
+input[type=email]{
+    margin-left: 48px;
+}

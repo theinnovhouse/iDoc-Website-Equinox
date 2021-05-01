@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="css/nav-style.css" />
-    <link type="text/css" rel="stylesheet" href="css/landing.css" />
+    <link type="text/css" rel="stylesheet" href="css/login.css" />
 
     <title>iDoc</title>
     <link rel="icon" type="image/png" href="Assets/Common-Assets/adglogo.png">
@@ -17,7 +17,7 @@
 
 			<!-- Logo in Navbar -->
 				<div class="logo">
-					<a href="index.html" style="text-decoration: none; color: #e6e6e6">
+					<a href="index" style="text-decoration: none; color: #e6e6e6">
 						<h4 style="color: #3F4255;"><img src="" class="logo">iDoc</h4>
 					</a>
 				</div>
@@ -25,18 +25,19 @@
 			<!-- Nav Links -->
 			<ul class="navlinks">
 				<li>
-					<a href="appointments.html" class="nav-link nav-link-grow-up">Appointments</a>
+					<a href="projects" class="nav-link nav-link-grow-up">Appointments</a>
 				</li>
 				<li>
-					<a href="medibot.html" class="nav-link nav-link-grow-up">MediBot</a>
+					<a href="about" class="nav-link nav-link-grow-up">Medibot</a>
 				</li>
 				<li>
-					<a href="medistore.html" class="nav-link nav-link-grow-up">MediStore</a>
+					<a href="partners" class="nav-link nav-link-grow-up">MediStore</a>
 				</li>
 				<li>
-					<a href="assistant.html" class="nav-link nav-link-grow-up">Assistant</a>
+					<a href="events" class="nav-link nav-link-grow-up">Assistant</a>
 				</li>
-				<button onclick="location.href='login.html';" class="login">LOGIN</button>
+				
+				<button class="login">LOGIN</button>
 			</ul>
 			
 			<!-- Responsive Burger Menu -->
@@ -47,11 +48,16 @@
 			</div>
 		</nav>
 		<!--NAVBAR Ends-->
-		<div>
-			<img src="Assets/final.svg" class="bg" alt="">
-		</div>
-		
-</body>
 
+        <div class="form">
+            <label for="">Email:</label>
+            <input type="email" placeholder="Email">
+            <br><br>
+            <label for="">Password:</label>
+            <input type="password" placeholder="Password">
+            <br><br>
+            <button class="login">LOGIN</button>
+        </div>
+</body>
     <script src="js/nav.js"></script>
 </html>

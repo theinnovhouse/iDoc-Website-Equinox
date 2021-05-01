@@ -5,7 +5,6 @@
 	box-sizing: border-box;
 	font-family: "sf_pro_displayregular";
 	/* background: #ffffff; */
-	background-color: #EDF1F3;
 }
 /* body{
 	background-image: url(bg.png);
@@ -44,15 +43,15 @@ img.logo {
 	display: flex;
 	justify-content: space-around;
 	width: 50%;
-	color: #e5e5e5;
+	color: #ffffff;
 }
 .navlinks li {
 	list-style: none;
 	position: relative;
 }
 .navlinks a {
-	font-size: 14px;
-	color: #3F4255;
+	font-size: 15px;
+	color: #000000;
 	text-decoration: none;
 	letter-spacing: 1.5px;
 	opacity: 0.85;
@@ -192,4 +191,16 @@ img.logo {
 }
 .login:hover{
 	cursor: pointer;
+}
+
+
+/* Password */
+.fa,
+.far,
+.fas {
+  display: inline;
+}
+i {
+  margin-left: -30px;
+  cursor: pointer;
 }

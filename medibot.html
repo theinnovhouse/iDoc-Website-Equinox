@@ -52,15 +52,16 @@
             <br><br>
 			<h2>Search for a Medicine</h2><br>
             <input type="text" class="search" placeholder="Search for Medicines" list="medicines" id="searchBar">
+            <input type="button" class="searchBtn" id="searchBtn" value="Search" onclick="showMed()" style="cursor: pointer;"></input>
             <datalist id="medicines"></datalist>
             <script>
             var medicines = [
-                "Abaddon",
-                "Alchemist",
-                "Ancient Apparition",
-                "Anti-Mage",
-                "Axe",
-                "Bane",
+                "Lipitor",
+                "Nexium Capsule",
+                "Plavix",
+                "Advair Diskus Blister",
+                "Abilify",
+                "Rabeprazole"
             ];
 
             for (var key in medicines) {
@@ -70,12 +71,11 @@
             }
             </script>
             <br><br><br>
-
-            <div class="result">
-                <h2>Result</h2><br>
-
+            <h2 class="result" id="result" style="display: none;">Result</h2><br>
+        </div> 
                 <div class="cards-container">
-                    <div class="card">
+                  
+                    <div class="card" id="Rabeprazole" style="display: none;">
                         <div class="card-image">
                         <img src="Assets/meds1.jpg" class="doctorimage" style="height: 100%;">
                         </div>
@@ -94,9 +94,83 @@
                         <br>
                         </div>
                     </div>
-                </div>
-		    </div> 
-        </div>       
+                    <div class="card" id="Lipitor" style="display: none;">
+                        <div class="card-image">
+                        <img src="Assets/meds1.jpg" class="doctorimage" style="height: 100%;">
+                        </div>
+                        <div class="container">
+                        <h3><b>Lipitor, Oral Tablet</b></h3><br>
+                        <h4> Usage</h4>
+                        <p>Lipitor is used along with a proper diet to help lower "bad" cholesterol and fats</p>
+                        <h4>Side Effects</h4>
+                        <p>Many people using this medication do not have serious side effects.</p>
+                        <br>
+                        </div>
+                    </div>
+                    <div class="card" id="Nexium Capsule" style="display: none;">
+                        <div class="card-image">
+                        <img src="Assets/meds1.jpg" class="doctorimage" style="height: 100%;">
+                        </div>
+                        <div class="container">
+                        <h3><b>Nexium, Capsule</b></h3><br>
+                        <h4> Usage</h4>
+                        <p>Nexium is used to treat certain stomach and esophagus problems.</p>
+                        <h4>Side Effects</h4>
+                        <p>Headache or abdominal pain may occur. If any of these effects persist or worsen, tell your doctor or pharmacist promptly.</p>
+                        <br>
+                        </div>
+                    </div>
+                    <div class="card" id="Plavix" style="display: none;">
+                        <div class="card-image">
+                        <img src="Assets/meds1.jpg" class="doctorimage" style="height: 100%;">
+                        </div>
+                        <div class="container">
+                        <h3><b>Plavix</b></h3><br>
+                        <h4> Usage</h4>
+                        <p>Plavix is a prescription medicine used to treat the symptoms of acute coronary syndrome such as a stroke, blood clot or serious heart problem after a heart attack, severe chest pain or circulation problems.</p>
+                            <h4>Side Effects</h4>
+                        <p>pale skin,
+                                easy bruising,
+                                purple spots under your skin or in your mouth, fever, etc.</p>
+                        <br>
+                        </div>
+                    </div>
+                    <div class="card" id="Advair Diskus Blister" style="display: none;">
+                        <div class="card-image">
+                        <img src="Assets/meds1.jpg" class="doctorimage" style="height: 100%;">
+                        </div>
+                        <div class="container">
+                        <h3><b>Advair Diskus Blister, Inhalation</b></h3><br>
+                        <h4> Usage</h4>
+                        <p>This product is used to control and prevent symptoms (wheezing and shortness of breath) caused by asthma or ongoing lung disease (chronic obstructive pulmonary disease-COPD, which includes chronic bronchitis and emphysema). </p>
+                        <h4>Side Effects</h4>
+                        <p>Hoarseness, throat irritation, headache, or stomach upset may occur. If any of these effects persist or worsen, tell your doctor promptly.</p>
+                        <br>
+                        </div>
+                    </div>
+                    <div class="card" id="Abilify" style="display: none;">
+                        <div class="card-image">
+                        <img src="Assets/meds1.jpg" class="doctorimage" style="height: 100%;">
+                        </div>
+                        <div class="container">
+                        <h3><b>Abilify</b></h3><br>
+                        <h4> Usage</h4>
+                        <p>Abilify is used to treat certain mental/mood disorders (such as bipolar disorder, schizophrenia, Tourette's syndrome, and irritability associated with autistic disorder). </p>
+                        <h4>Side Effects</h4>
+                        <p>Dizziness, lightheadedness, drowsiness, nausea, vomiting, tiredness, excess saliva/drooling, blurred vision, weight gain, constipation, headache, and trouble sleeping may occur.</p>
+                        <br>
+                        </div>
+                    </div>
+		            </div> 
+            
 </body>
     <script src="js/nav.js"></script>
+
+    <script>
+        function showMed(){
+            var med = document.getElementById("searchBar").value;
+            document.getElementById(med).style.display = "flex";
+            document.getElementById("result").style.display = "block";
+        }
+    </script>
 </html>

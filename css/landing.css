@@ -1,18 +1,27 @@
+body{
+    background-color: #EDF1F3;
+}
 .bg{
     float: right;
-    height: 80vh;
-    margin-right: 10%;
-    margin-top: 2%;
+    height: 85vh;
+    margin-right: 8%;
+    margin-top: 0%;
 }
 .text{
-    margin-left: 10%;
-    margin-top: 10%;
+    margin-left: 12%;
+    margin-top: 12%;
     width: 35%;
+    float: left;
+}
+.texta{
+    margin-left: 10%;
+    margin-top: 12%;
+    width: 30%;
     float: left;
 }
 .one{
     float: left;
-    height: 100vh;
+    height: 90vh;
     margin-left: 10%;
     margin-top: 2%;
 }
@@ -48,7 +57,11 @@ h5{
     box-shadow: 20px 20px 50px #B0C8F3;
     letter-spacing: 1.5px;
     font-size: 11px;
+    opacity: 0.8;
+    transition: 1s;
 }
 .download:hover{
     cursor: pointer;
+    opacity: 1;
 }
+

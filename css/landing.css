@@ -4,3 +4,51 @@
     margin-right: 10%;
     margin-top: 2%;
 }
+.text{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 35%;
+    float: left;
+}
+.one{
+    float: left;
+    height: 100vh;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.text1{
+    margin-right: 12%;
+    width: 30%;
+    float: right;
+}
+.heading{
+    font-size: 55px;
+    letter-spacing: 1.5px;
+    color: #3F4255;
+}
+h2{
+    color:#3F4255;
+}
+h3{
+    color: #0091FB;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+h5{
+    letter-spacing: 1.5px;
+}
+.download{
+    color: white;
+    background-color: #0091FB;
+    border: #0091FB;
+    width: 200px;
+    height: auto;
+    padding: 3%;
+    border-radius: 5px;
+    box-shadow: 20px 20px 50px #B0C8F3;
+    letter-spacing: 1.5px;
+    font-size: 11px;
+}
+.download:hover{
+    cursor: pointer;
+}

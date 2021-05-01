@@ -77,6 +77,8 @@ img {
 input[type='date']{
     width: 250px;
     height: auto;
+    border: black solid 0.5px;
+    outline: none;
 }
 /*Choose Slot */
 ul.ks-cboxtags {

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/nav-style.css" />
+    <link type="text/css" rel="stylesheet" href="css/medibot.css" />
+    <title>iDoc</title>
+    <link rel="icon" type="image/png" href="Assets/favicon.png">
+	<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
+</head>
+<body>
+		<!--NAVBAR Starts-->
+		<nav class="nav-active" id="navbar">
+
+			<!-- Logo in Navbar -->
+            <div class="logo">
+					
+                <a href="index.html" style="text-decoration: none; color: #e6e6e6">
+                    <img src="Assets/logo.png" style="margin-top: -10px;">
+                </a>
+            </div>
+
+			<!-- Nav Links -->
+			<ul class="navlinks">
+				<li>
+					<a href="appointments.html" class="nav-link nav-link-grow-up">Appointments</a>
+				</li>
+				<li>
+					<a href="medibot.html" class="nav-link nav-link-grow-up">MediBot</a>
+				</li>
+				<li>
+					<a href="medistore.html" class="nav-link nav-link-grow-up">MediStore</a>
+				</li>
+				<li>
+					<a href="assistant.html" class="nav-link nav-link-grow-up">Assistant</a>
+				</li>
+				<button onclick="location.href='login.html';" class="login">LOGIN</button>
+			</ul>
+			
+			<!-- Responsive Burger Menu -->
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+		<!--NAVBAR Ends-->
+
+        <div class="appointments">
+            <br><br>
+			<h2>Search for a Medicine</h2><br>
+            <input type="text" class="search" placeholder="Search for Medicines" list="medicines" id="searchBar">
+            <datalist id="medicines"></datalist>
+            <script>
+            var medicines = [
+                "Abaddon",
+                "Alchemist",
+                "Ancient Apparition",
+                "Anti-Mage",
+                "Axe",
+                "Bane",
+            ];
+
+            for (var key in medicines) {
+                var optionElement = document.createElement("option");
+                optionElement.value = medicines[key];
+                document.getElementById("medicines").appendChild(optionElement);
+            }
+            </script>
+            <br><br><br>
+
+            <div class="result">
+			<h2>Result</h2><br>
+
+			<div class="cards-container">
+				<div class="card">
+                    <div class="card-image">
+					<img src="Assets/meds1.jpg" class="doctorimage" style="height: 100%;">
+                    </div>
+					<div class="container">
+					  <h3><b>Rabeprazole, Oral Tablet</b></h3><br>
+                      <h4> Usage</h4>
+					  <p>Rabeprazole is used to treat several gastrointestinal (GI) conditions. These conditions are caused by high levels of acid produced by the stomach.</p>
+                        <h4>Side Effects</h4>
+                        <p>headache,
+                            pain in the abdomen (stomach area),
+                            sore throat,
+                            gas,
+                            infection,
+                            constipation,
+                            diarrhea</p>
+					  <br>
+					</div>
+				</div>
+            </div>
+		</div>        
+</body>
+    <script src="js/nav.js"></script>
+</html>

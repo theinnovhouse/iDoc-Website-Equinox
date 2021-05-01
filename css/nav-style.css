@@ -179,12 +179,11 @@ img.logo {
 }
 
 
-
 .login{
 	background-color: #F5601E;
-	box-shadow: #F5601E;
+	padding: 1%;
 	width: 120px;
-	height: 30px;
+	height: auto;
 	border: #F0D2CD;
 	color: white;
 	font-size: 12px;

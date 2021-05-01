@@ -7,7 +7,7 @@
     <link type="text/css" rel="stylesheet" href="css/nav-style.css" />
     <link type="text/css" rel="stylesheet" href="css/appointments.css" />
     <title>iDoc</title>
-    <link rel="icon" type="image/png" href="Assets/Common-Assets/adglogo.png">
+    <link rel="icon" type="image/png" href="Assets/favicon.png">
 	<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
 </head>
 <body>
@@ -49,8 +49,11 @@
 		<!--NAVBAR Ends-->
 
         <div class="appointments">
+			<br>
+			<br>
 			<h2>Book an Appointment</h2><br>
-            <input type="text" class="search" placeholder="Search for Doctors">
+            <input type="text" class="search" placeholder="Search for Doctors" list="medicines" id="searchBar">
+            <input type="button" class="searchBtn" id="searchBtn" value="Search" onclick="showMed()" style="cursor: pointer;"></input>
             <br><br><br>
 			<h2>Top Doctors</h2><br>
 
@@ -58,7 +61,7 @@
 				<div class="card">
 					<img src="assets/doctor.svg" class="doctorimage" style="width:100%">
 					<div class="container">
-					  <h4><b>Dr.Jane</b></h4>
+					  <h4><b>Dr.Jane Ray</b></h4>
 					  <p>Cardiologist</p>
 					  <br>
 					  <button class="bookappointment" onclick="location.href='doctorcard.html';" >&nbsp;&nbsp; Book Appointment &nbsp;&nbsp;</button>
@@ -68,7 +71,7 @@
 				<div class="card">
 					<img src="assets/doctor.svg" class="doctorimage" style="width:100%">
 					<div class="container">
-					  <h4><b>John Doe</b></h4>
+					  <h4><b>Dr. Rob Linda</b></h4>
 					  <p>Dentist</p>
 					  <br>
 					  <button class="bookappointment">&nbsp;&nbsp; Book Appointment &nbsp;&nbsp;</button>
@@ -78,8 +81,8 @@
 				<div class="card">
 					<img src="assets/doctor.svg" class="doctorimage" style="width:100%">
 					<div class="container">
-					  <h4><b>John Doe</b></h4>
-					  <p>Architect & Engineer</p>
+					  <h4><b>Dr. Zayn Cho</b></h4>
+					  <p>Physiotherapist</p>
 					  <br>
 					  <button class="bookappointment">&nbsp;&nbsp; Book Appointment &nbsp;&nbsp;</button>
 					</div>
@@ -88,8 +91,8 @@
 				<div class="card">
 					<img src="assets/doctor.svg" class="doctorimage" style="width:100%">
 					<div class="container">
-					  <h4><b>John Doe</b></h4>
-					  <p>Architect & Engineer</p>
+					  <h4><b>Dr. Liam Bennet</b></h4>
+					  <p>Physician</p>
 					  <br>
 					  <button class="bookappointment">&nbsp;&nbsp; Book Appointment &nbsp;&nbsp;</button>
 					</div>

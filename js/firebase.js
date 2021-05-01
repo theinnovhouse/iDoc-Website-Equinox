@@ -35,18 +35,20 @@ function getCheckedValue(el) {
 function readData() {
     let chosenSlot = getCheckedValue(document.getElementsByName('t[]'));
     console.log(chosenSlot);
-    let doctor = "Dr. Jane";
+    let doctor = "Dr. Jane Ray";
     let user = "Guest User"
-    writeUserData(chosenSlot, doctor, user);
+    let date = document.getElementById("date").value;
+    writeUserData(chosenSlot, doctor, user, date);
   }
   
   //To push values to firebase
-  function writeUserData(chosenSlot, doctor, user)
+  function writeUserData(chosenSlot, doctor, user, date)
   {
       firebase.database().ref('appointment/').push({
-      date: chosenSlot,
+      slot: chosenSlot,
       doctor: doctor, 
-      uid: user
+      uid: user,
+      date: date
     });
     console.log("Hey");
 }

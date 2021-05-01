@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/nav-style.css" />
+    <link type="text/css" rel="stylesheet" href="css/appointments.css" />
+    <title>iDoc</title>
+    <link rel="icon" type="image/png" href="Assets/Common-Assets/adglogo.png">
+	<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
+</head>
+<body>
+		<!--NAVBAR Starts-->
+		<nav class="nav-active" id="navbar">
+
+			<!-- Logo in Navbar -->
+				<div class="logo">
+					<a href="index.html" style="text-decoration: none; color: #e6e6e6">
+						<h4 style="color: #3F4255;"><img src="" class="logo">iDoc</h4>
+					</a>
+				</div>
+
+			<!-- Nav Links -->
+			<ul class="navlinks">
+				<li>
+					<a href="appointments.html" class="nav-link nav-link-grow-up">Appointments</a>
+				</li>
+				<li>
+					<a href="medibot.html" class="nav-link nav-link-grow-up">MediBot</a>
+				</li>
+				<li>
+					<a href="medistore.html" class="nav-link nav-link-grow-up">MediStore</a>
+				</li>
+				<li>
+					<a href="assistant.html" class="nav-link nav-link-grow-up">Assistant</a>
+				</li>
+				<button onclick="location.href='login.html';" class="login">LOGIN</button>
+			</ul>
+			
+			<!-- Responsive Burger Menu -->
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+		<!--NAVBAR Ends-->
+
+        <div class="appointments">
+            <br>
+			<h2>Book an Appointment</h2><br><br>
+			
+				<div class="card" style="border-radius: 20px; height: 350px; width: 25%; margin-left: 10%; padding-top: 2%;">
+					<img src="assets/doctor.svg" class="doctorimage1" style="width:100%">
+					<div class="container">
+					  <h4><b>Dr.Jane</b></h4>
+					  <p>Cardiologist</p>
+                      <p>Narayana Hospital</p>
+					</div>
+				</div>
+            <div class="right">
+                <h3>Select a Date: &nbsp; <input type="date"></h3><br>
+                <h3>Choose a Slot: </h3><br>
+
+                <div class="container">
+                    <ul class="ks-cboxtags">
+                      <li>
+                        <input
+                          type="radio"
+                          id="checkboxOne"
+                          name="t[]"
+                          data-value=""
+                          data-id="teams"
+                          value="z"
+                        />
+                        <label for="checkboxOne">14:00-14:30</label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          id="checkboxTwo"
+                          name="t[]"
+                          data-value="0" 
+                          data-id="teams"
+                          value="0"
+                        />
+                        <label for="checkboxTwo">14:30-15:00</label>
+                      </li>
+                      <li>
+                        <input 
+                        type="radio" 
+                        id="checkboxThree" 
+                        name="t[]"
+                        data-value="1" 
+                        data-id="teams"
+                        value="1"
+                        />
+                        <label for="checkboxThree">15:00-15:30</label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          id="checkboxFour"
+                          name="t[]"
+                          data-value="2" 
+                          data-id="teams"
+                          value="2"
+                        />
+                        <label for="checkboxFour">15:30-16:00</label>
+                      </li>
+                      <li>
+                        <input 
+                        type="radio" 
+                        id="checkboxFive" 
+                        name="t[]"
+                        data-value="3" 
+                        data-id="teams"
+                        value="3"
+                        />
+                        <label for="checkboxFive">16:00-16:30</label>
+                      </li>
+                      <br>
+                      <li>
+                        <input
+                          type="radio"
+                          id="checkboxSix"
+                          name="t[]"
+                          data-value="7" 
+                          data-id="teams"
+                          value="7"
+                        />
+                        <label for="checkboxSix">16:30-17:00</label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          id="checkboxSeven"
+                          name="t[]"
+                          data-value="4" 
+                          data-id="teams"
+                          value="4"
+                        />
+                        <label for="checkboxSeven">17:00-17:30</label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          id="checkboxEight"
+                          name="t[]"
+                          data-value="5" 
+                          data-id="teams"
+                          value="5"
+                        />
+                        <label for="checkboxEight">17:30-18:00</label>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          id="checkboxNine"
+                          name="t[]"
+                          data-value="6" 
+                          data-id="teams"
+                          value="6"
+                        />
+                        <label for="checkboxNine">18:00-18:30</label>
+                      </li>
+                      <li>
+                        <input 
+                        type="radio" 
+                        id="checkboxTen" 
+                        name="t[]" 
+                        data-value="8" 
+                        data-id="teams"
+                        value="8"/>
+                        <label for="checkboxTen">18:30-19:00</label>
+                      </li>
+                    </ul>
+                  </div>
+                <br>
+                <button class="scheduleappointment" onclick="location.href='doctorcard.html';" style="margin-left: 30%;">&nbsp;&nbsp; Schedule Appointment &nbsp;&nbsp;</button>
+                <button class="scheduleappointment" onclick="location.href='doctorcard.html';" style="margin-left: 1%;">&nbsp;&nbsp; View Appointments &nbsp;&nbsp;</button>
+            </div>
+					
+		</div>      
+</body>
+    <script src="js/nav.js"></script>
+</html>

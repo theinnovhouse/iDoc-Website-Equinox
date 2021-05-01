@@ -7,10 +7,47 @@
     height: 50px;
     padding: 1%;
 }
-table{
-    border: 1px solid black;
-    border-collapse: separate;
-    align-items: center;
-    width: 1000px;
-    margin-left:11%;
+h2{
+    text-align: left;
+    margin-left: 11%;
+}
+
+.cards-container{
+    margin-left: 8%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 18%;
+    height: 250px;
+    border-radius: 5px;
+    margin-left: 4%;
+    margin-bottom: 5%;
+    float: left;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+img {
+    border-radius: 5px 5px 0 0;
+}
+  
+.container {
+    padding: 2px 16px;
+}
+
+.bookappointment{
+    background-color: #F59D17;
+    border: #F59D17;
+    height: 30px;
+    border-radius: 5px;
+}
+.bookappointment:hover{
+    cursor: pointer;
+}
+.doctorimage{
+    width: 140px;
+    height: 140px;
 }

@@ -5,9 +5,14 @@
 	box-sizing: border-box;
 	font-family: "sf_pro_displayregular";
 	/* background: #ffffff; */
-	background-image: url(background.png);
+	
 }
-
+body{
+	background-image: url(background.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* background-size: 100% 100%; */
+}
 /* Navbar starts */
 nav {
 	display: flex;

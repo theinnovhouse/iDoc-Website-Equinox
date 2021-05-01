@@ -8,17 +8,20 @@
     <link type="text/css" rel="stylesheet" href="css/login.css" />
 
     <title>iDoc</title>
-    <link rel="icon" type="image/png" href="Assets/Common-Assets/adglogo.png">
+	
+    <link rel="icon" type="image/png" href="Assets/favicon.png">
 	<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
+
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 		<!--NAVBAR Starts-->
 		<nav class="nav-active" id="navbar">
-
 			<!-- Logo in Navbar -->
 				<div class="logo">
-					<a href="index" style="text-decoration: none; color: #e6e6e6">
-						<h4 style="color: #3F4255;"><img src="" class="logo">iDoc</h4>
+					<a href="index.html" style="text-decoration: none; color: #e6e6e6">
+						<img src="Assets/logo.png" style="margin-top: -10px;">
 					</a>
 				</div>
 
@@ -36,7 +39,6 @@
 				<li>
 					<a href="assistant.html" class="nav-link nav-link-grow-up">Assistant</a>
 				</li>
-				
 				<button onclick="location.href='login.html';" class="login">LOGIN</button>
 			</ul>
 			
@@ -49,15 +51,71 @@
 		</nav>
 		<!--NAVBAR Ends-->
 
-        <div class="form">
+        <div id="form" class="form">
             <label for="">Email:</label>
-            <input type="email" placeholder="Email">
+            <input id="loginEmail" type="email" placeholder="Email">
             <br><br>
             <label for="">Password:</label>
-            <input type="password" placeholder="Password">
+            <input id="loginPass" type="password" placeholder="Password">
             <br><br>
-            <button class="login">LOGIN</button>
+            <button type="submit" onclick="login()" id="login-btn" class="login-btn">LOGIN</button>
+			<br><br>
+			<h5 style="cursor: pointer;" onclick="signupform()">Create a new account</h5></a> 
         </div>
-</body>
+
+		<div id="signup-form" class="signup-form" style="display: none;">
+			<label id="name" for="">Name:</label>
+			<input id="signupName" type="text" placeholder="Name">
+			<br><br>
+            <label id="email" for="">Email:</label>
+            <input id="signupEmail" type="email" placeholder="Email">
+            <br><br>
+			<label id="phone" for="">Phone No.:</label>
+			<input id="signupPhone" type="text" placeholder="Phone Number">
+			<br><br>
+			<label id="city" for="">City:</label>
+			<input id="signupCity" type="text" placeholder="City">
+			<br><br>
+            <label id="password" for="">Password:</label>
+            <input id="signupPassword" type="password" placeholder="Password">
+            <br><br>
+			<label id="confirmpassword" for="">Confirm Password:</label>
+            <input id="signupConfirmpassword" type="password" placeholder="Confirm Password">
+            <br><br>
+            <button type="submit" onclick="authSignup()" id="signup-btn" class="login-btn">SIGNUP</button>
+			<br><br>
+			<h5 style="cursor: pointer;" onclick="loginform()">I already have an account</h5></a> 
+        </div>
+
+		<script>
+			function signupform(){
+				var signup=document.getElementById("signup-form");
+				signup.style.display="block";
+
+				var login=document.getElementById("form");
+				login.style.display="none";
+			}
+			function loginform(){
+				var signup=document.getElementById("signup-form");
+				signup.style.display="none";
+
+				var login=document.getElementById("form");
+				login.style.display="block";
+			}
+		</script>
+	
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+	
+    <script src="js/firebase.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="js/logout.js"></script>
+</body>
 </html>

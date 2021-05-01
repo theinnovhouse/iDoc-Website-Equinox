@@ -3,15 +3,56 @@
     align-items: center;
     margin-top: 10%;
 }
+.signup-form{
+    text-align: center;
+    align-items: center;
+    margin-top: 6%;
+}
+.login-btn{
+	background-color: #F5601E;
+	padding: 0.5%;
+	width: 120px;
+	height: auto;
+	border: #F0D2CD;
+	color: white;
+	font-size: 12px;
+	border-radius: 5px;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+}
+.login-btn:hover{
+	cursor: pointer;
+}
 input{
     width: 250px;
     height: 25px;
     border-radius: 5px;
     padding: 1%;
+    border: black solid 0.5px;
+    outline: none;
 }
+
 input[type=password]{
     margin-left: 20px;
 }
 input[type=email]{
     margin-left: 48px;
+}
+#name{
+    margin-right: 98px;
+}
+#email{
+    margin-right: 54px;
+}
+#phone{
+    margin-right: 70px;
+}
+#city{
+    margin-right: 112px;
+}
+#password{
+    margin-right: 56px;
+}
+#confirmpass{
+    margin-left: 40px;
 }

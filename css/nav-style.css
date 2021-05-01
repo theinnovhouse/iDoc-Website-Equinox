@@ -4,6 +4,8 @@
 	list-style: none;
 	box-sizing: border-box;
 	font-family: "sf_pro_displayregular";
+	/* background: #ffffff; */
+	background-image: url(background.png);
 }
 
 /* Navbar starts */
@@ -13,7 +15,7 @@ nav {
 	align-items: center;
 	min-height: 12vh;
 	/* background-color: #DBE1E5; */
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0) 100%);
+	/* background: linear-gradient(180deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0) 100%); */
 	color: #e5e5e5;
 	z-index: 99;
 	position: relative;
@@ -21,7 +23,7 @@ nav {
 }
 nav.light-theme {
 	/* color: #B7B4B4; */
-	background-color: #2f2f2f;
+	/* background-color: #2f2f2f; */
 }
 .logo {
 	letter-spacing: 5px;

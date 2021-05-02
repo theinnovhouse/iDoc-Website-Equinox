@@ -8,6 +8,10 @@
     <link type="text/css" rel="stylesheet" href="css/appointments.css" />
     <title>iDoc</title>
     <link rel="icon" type="image/png" href="Assets/favicon.png">
+
+    <!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
 	<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
 </head>
 <body>
@@ -48,7 +52,7 @@
 		</nav>
 		<!--NAVBAR Ends-->
 
-        <div class="appointments">
+    <div class="appointments">
 			<h2>Book an Appointment</h2><br><br>
 			
 				<div class="card" style="border-radius: 20px; height: 60vh; width: 25%; margin-left: 10%; padding-top: 2%;">
@@ -56,10 +60,11 @@
 					<div class="container" style="font-size: 120%;">
 					  <h4><b>Dr.Jane Ray</b></h4>
 					  <p>Cardiologist</p>
-                      <p>Narayana Hospital</p>
+            <p>Narayana Hospital</p>
 					</div>
 				</div>
-            <div class="right">
+        <form action="">
+          <div id="right" class="right">
                 <h3>Select a Date: &nbsp; <input type="date" id="date"></h3><br>
                 <h3>Choose a Slot: </h3><br>
 
@@ -181,7 +186,7 @@
                 <button class="scheduleappointment" onclick="readData()" style="margin-left: 30%;">&nbsp;&nbsp; Schedule Appointment &nbsp;&nbsp;</button>
                 <button class="scheduleappointment" onclick="location.href='doctorcard.html';" style="margin-left: 1%;">&nbsp;&nbsp; View Appointments &nbsp;&nbsp;</button>
             </div>
-					
+        </form>
 		</div>      
 </body>
 

@@ -27,9 +27,6 @@ function getCheckedValue(el) {
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-
-
-  
   
 //To read values of the form
 function readData() {
@@ -51,4 +48,7 @@ function readData() {
       date: date
     });
     console.log("Hey");
+    alert("Your appointment has been scheduled");
 }
+
+$("form").trigger("reset");
